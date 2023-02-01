@@ -1,0 +1,32 @@
+.btn-principal {
+    background-color: #2f3ab2;
+    color: white;
+}
+
+.btn-gray {
+    background-color: #d6d6d7;
+}
+
+.text-principal {
+    color: #2f3ab2;
+}
+
+a {
+    text-decoration: none;
+    color: #090909;
+    &:hover{
+        color: #2f3ab2;
+    }
+}
+
+.bg-card {
+    background-color: #fafafa;
+    &:hover{
+        background-color: white;
+    }
+}
+
+.category {
+    font-size: 0.75rem;
+    margin-top: -1rem;
+}
