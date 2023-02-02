@@ -13,25 +13,27 @@
 
 <body>
     <header class="container">
-        <nav class="row d-flex"> <!--NAVBAR-->
-            <div class="col-6">
+        <nav class="row mt-2"> <!--NAVBAR-->
+            <div class="nav-left col-6">
+                <span class="inline-block m:hidden">
+                    <button></button>
+                </span>
                 <a href="/" class="site-logo" aria-label="DEV Community 👩‍💻👨‍💻 Home">
                     <img class="site-logo__img"
                         src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
                         alt="DEV Community 👩‍💻👨‍💻">
                 </a>
-                <input type="text">
-                <button type="submit" aria-label="Search"
-                    class="c-btn c-btn--icon-alone absolute inset-px left-auto mt-0 py-0"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"
+                <input class="d-none d-sm-block" type="text" placeholder="Search..">
+                <button type="submit" aria-label="Search" class="c-btn c-btn--icon-alone absolute inset-px left-auto mt-0 py-0 bg-white border-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"
                         class="crayons-icon c-btn__icon" focusable="false">
                         <path
                             d="m18.031 16.617 4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z">
                         </path>
                     </svg></button>
             </div>
-            <div class="d-flex justify-content-end col-6 ">
-                <button type="button" class="btn btn-light">Log in</button>
+            <div class="nav-right d-flex justify-content-end col-6">
+                <button type="button" class="btn btn-light d-none d-sm-block">Log in</button>
                 <button type="button" class="btn btn-light">Create Account</button>
             </div>
         </nav>
@@ -45,28 +47,84 @@
                 </aside>
             </div>
             <div class="col-12 col-lg-6">
-                <main class="container"> <!--MAIN-->
-                    <div class="d-flex">
+                <main class="container w-100 "> <!--MAIN-->
+                    <div class="bttn-list d-flex d-none d-sm-block">
                         <ul class="list-group list-group-horizontal">
                             <li class="list-group-item">Relevant</li>
                             <li class="list-group-item">Latest</li>
                             <li class="list-group-item">Top</li>
-                          </ul>
+                        </ul>
                     </div>
-                    <div class="card" style="width: 100%;">
-                        <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--0YJjSZnv--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/oq1lv8jfdf929v783hyc.png"
-                            width="650" height="275" style="background-color:#dddddd;"
-                            class="crayons-article__cover__image__feed"
-                            alt="Cover image for 10 GitHub repositories to advance your career as a Developer 📚">
-                        <div class="card-body">
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores,
-                                quas..</p>
+                    <div class="card img-txt mt-2 rounded">
+                        <div class="card-img">
+                            <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--0YJjSZnv--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/oq1lv8jfdf929v783hyc.png"
+                                width="100%" style="background-color:#dddddd;"
+                                class="crayons-article__cover__image__feed"
+                                alt="Cover image for 10 GitHub repositories to advance your career as a Developer 📚">
                         </div>
+                        <div class="card-txt">
+                            <div class="card-head d-flex ms-3 mt-3">
+                                <div class="prof-img"><img
+                                        src="https://res.cloudinary.com/practicaldev/image/fetch/s--FFw2hZyr--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/676134/54212bd4-07df-4510-a9f4-e78cd52194a5.jpg"
+                                        alt="iarchitsharma profile" class="rounded-circle" loading="lazy"></div>
+                                <div class="name-date ms-3">
+                                    <h4 class="fs-5">Firstname Lastname</h4>
+                                    <h5 class="fs-6">Jan 20</h5>
+                                </div>
+                            </div>
+                            <div class="card-body ms-4 me-1">
+                                <a href="">
+                                    <h1 class="fw-bold">Lorem ipsum, dolor sit amet consectetur adipisicing..</h1>
+                                </a>
+                                <div class="hash d-flex ms-5 me-5">
+                                    <button type="button" class="btn btn-light me-2"><a href="#">#lorem</a></button>
+                                    <button type="button" class="btn btn-light me-2"><a href="#">#ipsum</a></button>
+                                    <button type="button" class="btn btn-light me-2"><a href="#">#dolor</a></button>
+                                    <button type="button" class="btn btn-light me-2"><a href="#">#sit</a></button>
+                                    
+                                </div>
+                                <div class="icons d-flex row mt-3">
+                                    <div class="icons-l d-flex col-6">
+                                        <div class="like-icon d-flex">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img"
+                                                aria-labelledby="aae1znpzzf24di3hkgvsd8zsp6mudk6j" class="crayons-icon">
+                                                <title id="aae1znpzzf24di3hkgvsd8zsp6mudk6j">Reactions</title>
+                                                <path
+                                                    d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z">
+                                                </path>
+                                            </svg>
+                                            <p>199 reactions</p>
+                                        </div>
+                                        <div class="comment-icon d-flex">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img"
+                                                aria-labelledby="alc3go8421s6forq0n8uac36q4uql3ut" class="crayons-icon">
+                                                <title id="alc3go8421s6forq0n8uac36q4uql3ut">Comments</title>
+                                                <path
+                                                    d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
+                                                </path>
+                                            </svg>
+                                            <p>21 comments</p>
+                                        </div>
+                                    </div>
+                                    <div class="icons-r d-flex justify-content-end col-6">
+                                        <div class="read-time fs-6">
+                                            10 min read
+                                        </div>
+                                        <div class="save-bttn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                aria-hidden="true">
+                                                <path
+                                                    d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+
                     </div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
                 </main>
             </div>
             <div class="col-lg-3">
