@@ -13,9 +13,9 @@
 
 <body>
     <header class="container">
-        <nav class="row mt-2"> <!--NAVBAR-->
-            <div class="nav-left col-6">
-                <span class="inline-block m:hidden">
+        <nav class="row mt-2 mb-2"> <!--NAVBAR-->
+            <div class="d-flex nav-left col-6">
+                <span class="d-m-none">
                     <button></button>
                 </span>
                 <a href="/" class="site-logo" aria-label="DEV Community 👩‍💻👨‍💻 Home">
@@ -23,7 +23,7 @@
                         src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
                         alt="DEV Community 👩‍💻👨‍💻">
                 </a>
-                <input class="d-none d-sm-block" type="text" placeholder="Search..">
+                <input class="w-70 d-none d-sm-block" type="text" placeholder="Search..">
                 <button type="submit" aria-label="Search"
                     class="c-btn c-btn--icon-alone absolute inset-px left-auto mt-0 py-0 bg-white border-0">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -34,14 +34,14 @@
                     </svg></button>
             </div>
             <div class="nav-right d-flex justify-content-end col-6">
-                <a href="" class="btn btn-terciario d-none d-sm-block">Log in </a>
-                <a href="" class="btn btn-secundario fw-semibold">Create account</a>
+                <a href="" class="btn btn-third d-none d-sm-block">Log in </a>
+                <a href="" class="btn btn-second fw-semibold">Create account</a>
             </div>
         </nav>
         </nav>
     </header>
 
-    <div class="container">
+    <div class="container bg-body-tertiary">
         <div class="row">
             <div class="col-lg-3">
                 <aside> <!--ASIDE IZQUIERDO-->
@@ -49,13 +49,10 @@
             </div>
             <div class="col-12 col-lg-6">
                 <main class="container-fluid w-100 "> <!--MAIN-->
-                    <div class="bttn-list d-flex d-none d-sm-block">
-                        <ul class="list-group list-group-horizontal">
-                            <li class="list-group-item">Relevant</li>
-                            <li class="list-group-item">Latest</li>
-                            <li class="list-group-item">Top</li>
-                        </ul>
-                    </div>
+                    <div class="bttn-list d-flex d-none d-sm-block mt-2">
+                        <a href="" class="btn1 btn btn-white">Relevant</a>
+                        <a href="" class="btn2 btn btn-white">Latest</a>
+                        <a href="" class="btn3 btn btn-white">Top</a>
                     <div class="card img-txt mt-2 mb-2 rounded">  <!--CARD-1-->
                         <div class="card-img">
                             <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--0YJjSZnv--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/oq1lv8jfdf929v783hyc.png"
@@ -130,7 +127,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-txt mb-2 border rounded">  <!--CARD-2-->
+                    <div class="card-txt mb-2 border rounded bg-white">  <!--CARD-2-->
                         <div class="card-head d-flex ms-3 mt-3">
                             <div class="prof-imgn">
                                 <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--na2G_BGr--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/538088/1d4dc8e0-2dae-49fa-929f-a38c3c6d3b51.jpg"
@@ -193,7 +190,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-txt mb-2 border rounded">  <!--CARD-3-->
+                    <div class="card-txt mb-2 border rounded bg-white">  <!--CARD-3-->
                         <div class="card-head d-flex ms-3 mt-3">
                             <div class="prof-imgn">
                                 <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--na2G_BGr--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/538088/1d4dc8e0-2dae-49fa-929f-a38c3c6d3b51.jpg"
@@ -256,7 +253,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-txt mb-2 border rounded">  <!--CARD-4-->
+                    <div class="card-txt mb-2 border rounded bg-white">  <!--CARD-4-->
                         <div class="card-head d-flex ms-3 mt-3">
                             <div class="prof-imgn">
                                 <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--na2G_BGr--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/538088/1d4dc8e0-2dae-49fa-929f-a38c3c6d3b51.jpg"
@@ -319,7 +316,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-txt mb-2 border rounded">  <!--CARD-5-->
+                    <div class="card-txt mb-2 border rounded bg-white">  <!--CARD-5-->
                         <div class="card-head d-flex ms-3 mt-3">
                             <div class="prof-imgn">
                                 <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--na2G_BGr--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/538088/1d4dc8e0-2dae-49fa-929f-a38c3c6d3b51.jpg"
@@ -382,7 +379,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-txt mb-2 border rounded">  <!--CARD-6-->
+                    <div class="card-txt mb-2 border rounded bg-white">  <!--CARD-6-->
                         <div class="card-head d-flex ms-3 mt-3">
                             <div class="prof-imgn">
                                 <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--na2G_BGr--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/538088/1d4dc8e0-2dae-49fa-929f-a38c3c6d3b51.jpg"

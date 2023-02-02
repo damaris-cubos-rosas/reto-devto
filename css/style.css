@@ -8,6 +8,10 @@
   font-style: normal;
 }
 
+.body {
+  background-color: grey;
+}
+
 .site-logo__img {
   width: 50px;
 }
@@ -21,13 +25,13 @@
   color: white;
 }
 
-.btn-secundario {
+.btn-second {
   color: #2f3ab2;
   background-color: white;
   border-color: #2f3ab2;
 }
 
-.btn-terciario {
+.btn-third {
   color: gray;
 }
 
