@@ -1,3 +1,7 @@
+body {
+    background-color: #f5f5f5;
+}
+
 .name-font{
     font-size: small;
 }
@@ -19,6 +23,7 @@
 .prof-img {
     width: 40px;
 }
+
 .btn-principal {
     background-color: #2f3ab2;
     color: white;
@@ -72,18 +77,41 @@ a {
     }
 }
 
-.bg-card {
-    background-color: #fafafa;
-
-    &:hover {
-        background-color: white;
-    }
-}
-
 .category {
     font-size: 0.75rem;
     margin-top: -1rem;
 }
+
+.aside-left-post {
+    button {
+        margin-bottom: -0.75rem;
+    }
+}
+
+#like-icon:hover {
+    fill: red;
+    border-radius: 50%;
+    background-color: #ff000044;
+}
+
+#comments-icon:hover {
+    fill: rgb(255, 217, 0);
+    border-radius: 50%;
+    background-color: #ffd90059;
+}
+
+#save-icon:hover {
+    fill: #2f3ab2;
+    border-radius: 50%;
+    background-color: #2f3ab236;
+    
+}
+
+#show-more-icon:hover {
+    border-radius: 50%;
+    background-color: #e5e5e5 !important;
+}
+
 
 footer {
     background-color: #e5e5e5;
