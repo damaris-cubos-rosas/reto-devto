@@ -2,12 +2,14 @@ body {
     background-color: #f5f5f5;
 }
 
+
 .btn-principal {
     background-color: #2f3ab2;
     color: white;
 }
 
-.btn-gray {
+.btn-gray,
+.bg-gray {
     background-color: #d6d6d7;
 }
 
@@ -27,6 +29,18 @@ a {
 .category {
     font-size: 0.75rem;
     margin-top: -1rem;
+
+    &.category-button:hover {
+        border: 1px solid gray;
+        border-radius: 10px;
+        padding: 5px;
+        background-color: lightgrey;
+
+        &:last-of-type {
+            border: 1px solid mediumseagreen;
+            background-color: palegreen;
+        }
+    }
 }
 
 .aside-left-post {
@@ -51,13 +65,44 @@ a {
     fill: #2f3ab2;
     border-radius: 50%;
     background-color: #2f3ab236;
-    
+
 }
 
 #show-more-icon:hover {
     border-radius: 50%;
     background-color: #e5e5e5 !important;
 }
+
+.post-data-img {
+    a.position-absolute {
+        top: 20px;
+        left: 20px;
+    }
+}
+
+article {
+    .article-main {
+        font-size: 20px;
+
+        .card {
+            li p {
+                color: #090909;
+            }
+        }
+    }
+}
+
+article {
+    .card {
+        li:last-of-type {
+            p {
+                background-color: #2f3ab2;
+                color: white;
+            }
+        }
+    }
+}
+
 
 
 footer {

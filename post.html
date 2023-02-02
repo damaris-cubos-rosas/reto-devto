@@ -19,40 +19,155 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-lg-3">
-                <aside class="aside-left-post d-block"> <!--ASIDE IZQUIERDO-->
+            <div class="col-lg-1">
+                <aside class="aside-left-post d-none d-lg-block"> <!--ASIDE IZQUIERDO-->
                     <button class="btn bg-transparent d-block">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-hidden="true" id="like-icon">
-                            <path d="M21.179 12.794l.013.014L12 22l-9.192-9.192.013-.014A6.5 6.5 0 0112 3.64a6.5 6.5 0 019.179 9.154zM4.575 5.383a4.5 4.5 0 000 6.364L12 19.172l7.425-7.425a4.5 4.5 0 10-6.364-6.364L8.818 9.626 7.404 8.21l3.162-3.162a4.5 4.5 0 00-5.99.334l-.001.001z"></path>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
+                            aria-hidden="true" id="like-icon">
+                            <path
+                                d="M21.179 12.794l.013.014L12 22l-9.192-9.192.013-.014A6.5 6.5 0 0112 3.64a6.5 6.5 0 019.179 9.154zM4.575 5.383a4.5 4.5 0 000 6.364L12 19.172l7.425-7.425a4.5 4.5 0 10-6.364-6.364L8.818 9.626 7.404 8.21l3.162-3.162a4.5 4.5 0 00-5.99.334l-.001.001z">
+                            </path>
                         </svg>
                         <p>18</p>
                     </button>
                     <button class="btn bg-transparent d-block">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-hidden="true" id="comments-icon">
-                            <path d="M10 3h4a8 8 0 010 16v3.5c-5-2-12-5-12-11.5a8 8 0 018-8zm2 14h2a6 6 0 000-12h-4a6 6 0 00-6 6c0 3.61 2.462 5.966 8 8.48V17z"></path>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
+                            aria-hidden="true" id="comments-icon">
+                            <path
+                                d="M10 3h4a8 8 0 010 16v3.5c-5-2-12-5-12-11.5a8 8 0 018-8zm2 14h2a6 6 0 000-12h-4a6 6 0 00-6 6c0 3.61 2.462 5.966 8 8.48V17z">
+                            </path>
                         </svg>
                         <p>18</p>
                     </button>
                     <button class="btn bg-transparent d-block">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-hidden="true" id="save-icon">
-                            <path d="M5 2h14a1 1 0 011 1v19.143a.5.5 0 01-.766.424L12 18.03l-7.234 4.536A.5.5 0 014 22.143V3a1 1 0 011-1zm13 2H6v15.432l6-3.761 6 3.761V4z"></path>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
+                            aria-hidden="true" id="save-icon">
+                            <path
+                                d="M5 2h14a1 1 0 011 1v19.143a.5.5 0 01-.766.424L12 18.03l-7.234 4.536A.5.5 0 014 22.143V3a1 1 0 011-1zm13 2H6v15.432l6-3.761 6 3.761V4z">
+                            </path>
                         </svg>
                         <p>9</p>
                     </button>
                     <button class="btn rounded-circle bg-transparent">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="a3z47noyb2dyfxqltjym8wvugymyvj6v" aria-hidden="true" id="show-more-icon">
-                            <path d="M7 12a2 2 0 11-4 0 2 2 0 014 0zm7 0a2 2 0 11-4 0 2 2 0 014 0zm5 2a2 2 0 100-4 2 2 0 000 4z"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img"
+                            aria-labelledby="a3z47noyb2dyfxqltjym8wvugymyvj6v" aria-hidden="true" id="show-more-icon">
+                            <path
+                                d="M7 12a2 2 0 11-4 0 2 2 0 014 0zm7 0a2 2 0 11-4 0 2 2 0 014 0zm5 2a2 2 0 100-4 2 2 0 000 4z">
+                            </path>
+                        </svg>
                     </button>
                 </aside>
             </div>
 
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-8 justify-content-lg-center">
                 <main> <!--MAIN-->
+                    <div class="container-fluid bg-white">
+                        <div class="row">
+                            <div class="col-12 border border-2 border-secondary-subtle rounded">
+                                <section>
+                                    <img class="img-fluid d-flex" src="assets/post-image.webp" alt="post-image">
+                                    <article class="ms-5">
+                                        <div class="article-header">
+                                            <div class="post-data-img d-flex mt-5 position-relative">
+                                                <a href="#">
+                                                    <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--Vce2LydN--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/1/0213bbaa-d5a1-4d25-9e7a-10c30b455af0.png"
+                                                        class="rounded" alt="DEV team profile image" width="40"
+                                                        height="40">
+                                                </a>
+                                                <a href="#" class="position-absolute d-inline-flex">
+                                                    <img class="border border-2 rounded-circle"
+                                                        src="https://res.cloudinary.com/practicaldev/image/fetch/s--Gjc1XuR4--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/494502/2d4eb07b-a07a-46f9-91cd-1b98d862a13c.png"
+                                                        alt="Erin Bensinger" width="24" height="24">
+                                                </a>
+
+                                                <div class="post-data d-flex ms-3">
+                                                    <a href="#">
+                                                        <h6 class="fw-bolder">Erin Bensinger</h6>
+                                                    </a>
+                                                    <span class="ms-2 text-muted"> for </span>
+                                                    <a href="#" class="ms-2">The DEV Team</a>
+                                                    <p>Posted on 31 ene</p>
+                                                </div>
+                                            </div>
+                                            <h1 class="fw-bolder mt-3">#DEVDiscuss: to Specialize or to Generalize?</h1>
+                                            <span class="d-flex mt-4">
+                                                <a href="#"
+                                                    class="category category-button text-muted d-inline me-3">#devdiscuss</a>
+                                                <a href="#"
+                                                    class="category category-button text-muted d-inline me-3">#career</a>
+                                                <a href="#"
+                                                    class="category category-button text-muted d-inline">#beginners</a>
+                                            </span>
+                                        </div>
+
+                                        <div class="article-main d-flex flex-column align-items-center mt-5">
+                                            <div class="card max-vw-100">
+                                                <div class="card-header bg-white">
+                                                    <h5 class="text-principal fw-bold">#DevDiscuss (4 Part Series)</h5>
+                                                </div>
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item">
+                                                        <p class="badge bg-gray rounded-circle p-2">1</p>
+                                                        <span><a href="#">#DevDiscuss: Uses of WebAssembly</a></span>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <p class="badge bg-gray rounded-circle p-2">2</p>
+                                                        <span><a href="#">#DevDiscuss: Passwordless
+                                                                Authentication</a></span>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <p class="badge bg-gray rounded-circle p-2">3</p>
+                                                        <span><a href="#">#DevDiscuss: Linode + DEV Hackathon</a></span>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <p class="badge bg-gray rounded-circle p-2">4</p>
+                                                        <span><a href="#" class="fw-bolder">#DevDiscuss: to Specialize
+                                                                or to Generalize?</a></span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <p class="fst-italic mt-3 align-self-start font-monospace">image created by
+                                                <a href="https://www.patreon.com/margauxpeltat"
+                                                    class="text-principal text-decoration-underline">Margaux Peltat</a>
+                                                for the <a href="https://www.youtube.com/watch?v=lTRiuFIWV54"
+                                                    class="text-principal text-decoration-underline">Chilled Cow YouTube
+                                                    channel</a>
+                                            </p>
+                                            <p class="align-self-start font-monospace">Time for #DEVDiscuss — right here
+                                                on DEV 😎</p>
+                                            <div class="card mt-3 mb-3 max-vw-100 position-relative">
+                                                <div class="row g-0">
+                                                    <div class="col-md-4">
+                                                        <img src="assets/post-card-image.jpg"
+                                                            class="img-fluid rounded-circle position-absolute"
+                                                            style="width:100px;" alt="post-card-image">
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <div class="card-body">
+                                                            <h2 class="card-title">Should Developers Specialize or
+                                                                Generalize?</h2>
+                                                            <p>Void⚡ ・ Jan 24 ・ 2 min read</p>
+                                                            <span class="d-flex justify-content-between">
+                                                                <p class="category text-muted d-inline">#career</p>
+                                                                <p class="category text-muted d-inline">#beginners</p>
+                                                                <p class="category text-muted d-inline">#webdev</p>
+                                                                <p class="category text-muted d-inline">#codenewbie</p>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
                 </main>
             </div>
 
             <div class="col-lg-3">
-                <aside class="aside-right-post"> <!--ASIDE DERECHO-->
+                <aside class="aside-right-post d-none d-lg-block"> <!--ASIDE DERECHO-->
                     <div class="container">
                         <div class="row">
                             <div class="col-12">
