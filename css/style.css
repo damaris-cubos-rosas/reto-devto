@@ -8,12 +8,15 @@
   font-style: normal;
 }
 
-.body {
-  background-color: grey;
-}
-
 .site-logo__img {
   width: 50px;
+}
+
+.search-bar {
+  width: 30vw;
+  border-color: #d4d4d4;
+  border-radius: 0.5rem;
+  padding-left: 10px;
 }
 
 .prof-img {
@@ -26,13 +29,29 @@
 }
 
 .btn-second {
-  color: #2f3ab2;
+  color: #404ee8;
   background-color: white;
-  border-color: #2f3ab2;
+  border-color: #404ee8;
+}
+.btn-second:hover {
+  background-color: #404ee8;
+  color: white;
+  text-decoration: underline;
 }
 
 .btn-third {
   color: gray;
+}
+.btn-third:hover {
+  background-color: #bfc3ef;
+  border: #9098ee;
+  text-decoration: underline;
+  color: #2f3ab2;
+}
+
+.btn1:hover, .btn2:hover, .btn3:hover {
+  color: #2f3ab2;
+  background-color: white;
 }
 
 .hash1, .hash2, .hash3, .hash4 {

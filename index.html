@@ -15,15 +15,15 @@
     <header class="container">
         <nav class="row mt-2 mb-2"> <!--NAVBAR-->
             <div class="d-flex nav-left col-6">
-                <span class="d-m-none">
+                <span class="d-block d-sm-none">
                     <button></button>
                 </span>
-                <a href="/" class="site-logo" aria-label="DEV Community 👩‍💻👨‍💻 Home">
+                <a href="/" class="site-logo me-3" aria-label="DEV Community 👩‍💻👨‍💻 Home">
                     <img class="site-logo__img"
                         src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
                         alt="DEV Community 👩‍💻👨‍💻">
                 </a>
-                <input class="w-70 d-none d-sm-block" type="text" placeholder="Search..">
+                <input class="search-bar d-none d-sm-block" type="text" placeholder="Search..">
                 <button type="submit" aria-label="Search"
                     class="c-btn c-btn--icon-alone absolute inset-px left-auto mt-0 py-0 bg-white border-0">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -34,7 +34,7 @@
                     </svg></button>
             </div>
             <div class="nav-right d-flex justify-content-end col-6">
-                <a href="" class="btn btn-third d-none d-sm-block">Log in </a>
+                <a href="" class="btn btn-third d-none d-sm-block me-1">Log in </a>
                 <a href="" class="btn btn-second fw-semibold">Create account</a>
             </div>
         </nav>
@@ -49,10 +49,11 @@
             </div>
             <div class="col-12 col-lg-6">
                 <main class="container-fluid w-100 "> <!--MAIN-->
-                    <div class="bttn-list d-flex d-none d-sm-block mt-2">
-                        <a href="" class="btn1 btn btn-white">Relevant</a>
+                    <div class="d-flex d-none d-sm-block mt-2">
+                        <a href="" class="btn1 btn btn-white fw-bold">Relevant</a>
                         <a href="" class="btn2 btn btn-white">Latest</a>
                         <a href="" class="btn3 btn btn-white">Top</a>
+                    </div>
                     <div class="card img-txt mt-2 mb-2 rounded">  <!--CARD-1-->
                         <div class="card-img">
                             <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--0YJjSZnv--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/oq1lv8jfdf929v783hyc.png"
