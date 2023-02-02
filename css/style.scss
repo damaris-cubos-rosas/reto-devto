@@ -2,9 +2,62 @@ body {
     background-color: #f5f5f5;
 }
 
+.name-font{
+    font-size: small;
+}
+.date-font{
+    color:grey;
+    font-size: smaller;
+    font-style: normal;
+}
+.site-logo__img{
+        width: 50px;
+}
+
+.search-bar{
+    width: 30vw;
+    border-color: #d4d4d4;
+    border-radius: .5rem;
+    padding-left: 10px;
+}
+.prof-img {
+    width: 40px;
+}
+
 .btn-principal {
     background-color: #2f3ab2;
     color: white;
+}
+.btn-second {
+    color: #404ee8;
+    background-color: white;
+    border-color: #404ee8;
+    &:hover{
+        background-color: #404ee8;
+        color: white;
+        text-decoration: underline;
+    }
+}
+.btn-third {
+    color:gray;
+    &:hover{
+        background-color: #bfc3ef;
+        border: #9098ee;
+        text-decoration: underline;
+        color: #2f3ab2;
+    }
+}
+.btn1, .btn2, .btn3{
+    &:hover{
+        color: #2f3ab2;
+        background-color:white;
+    }
+}
+.hash1, .hash2, .hash3, .hash4 {
+    border:none;
+    &:hover{
+        background-color: lightgray;
+    }
 }
 
 .btn-gray {
