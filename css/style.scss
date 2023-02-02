@@ -1,16 +1,35 @@
-.site-logo{
-    display:inline-block;
-    .site-logo__img{
-        width: 40px;
-    }
+.name-font{
+    font-size: small;
+}
+.date-font{
+    color:grey;
+    font-size: smaller;
+    font-style: normal;
 }
 
+.site-logo__img{
+        width: 50px;
+}
 .prof-img {
     width: 40px;
 }
 .btn-principal {
     background-color: #2f3ab2;
     color: white;
+}
+.btn-secundario {
+    color: #2f3ab2;
+    background-color: white;
+    border-color: #2f3ab2;
+}
+.btn-terciario {
+    color:gray;
+}
+.hash1, .hash2, .hash3, .hash4 {
+    border:none;
+    &:hover{
+        background-color: lightgray;
+    }
 }
 
 .btn-gray {
