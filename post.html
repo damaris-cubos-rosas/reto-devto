@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dev.to</title>
+</head>
+
+<body>
+    <header class="container">
+        <nav class="row mt-2 mb-2"> <!--NAVBAR-->
+            <div class="d-flex nav-left col-6">
+                <span class="d-block d-sm-none">
+                    <button></button>
+                </span>
+                <a href="/" class="site-logo me-3" aria-label="DEV Community 👩‍💻👨‍💻 Home">
+                    <img class="site-logo__img"
+                        src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
+                        alt="DEV Community 👩‍💻👨‍💻">
+                </a>
+                <input class="search-bar d-none d-sm-block" type="text" placeholder="Search..">
+                <button type="submit" aria-label="Search"
+                    class="c-btn c-btn--icon-alone absolute inset-px left-auto mt-0 py-0 bg-white border-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        aria-hidden="true" class="crayons-icon c-btn__icon" focusable="false">
+                        <path
+                            d="m18.031 16.617 4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z">
+                        </path>
+                    </svg></button>
+            </div>
+            <div class="nav-right d-flex justify-content-end col-6">
+                <a href="" class="btn btn-third d-none d-sm-block me-1">Log in </a>
+                <a href="" class="btn btn-second fw-semibold">Create account</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-lg-1">
+                <aside class="aside-left-post d-none d-lg-block"> <!--ASIDE IZQUIERDO-->
+                    <button class="btn bg-transparent d-block">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
+                            aria-hidden="true" id="like-icon">
+                            <path
+                                d="M21.179 12.794l.013.014L12 22l-9.192-9.192.013-.014A6.5 6.5 0 0112 3.64a6.5 6.5 0 019.179 9.154zM4.575 5.383a4.5 4.5 0 000 6.364L12 19.172l7.425-7.425a4.5 4.5 0 10-6.364-6.364L8.818 9.626 7.404 8.21l3.162-3.162a4.5 4.5 0 00-5.99.334l-.001.001z">
+                            </path>
+                        </svg>
+                        <p>18</p>
+                    </button>
+                    <button class="btn bg-transparent d-block">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
+                            aria-hidden="true" id="comments-icon">
+                            <path
+                                d="M10 3h4a8 8 0 010 16v3.5c-5-2-12-5-12-11.5a8 8 0 018-8zm2 14h2a6 6 0 000-12h-4a6 6 0 00-6 6c0 3.61 2.462 5.966 8 8.48V17z">
+                            </path>
+                        </svg>
+                        <p>18</p>
+                    </button>
+                    <button class="btn bg-transparent d-block">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
+                            aria-hidden="true" id="save-icon">
+                            <path
+                                d="M5 2h14a1 1 0 011 1v19.143a.5.5 0 01-.766.424L12 18.03l-7.234 4.536A.5.5 0 014 22.143V3a1 1 0 011-1zm13 2H6v15.432l6-3.761 6 3.761V4z">
+                            </path>
+                        </svg>
+                        <p>9</p>
+                    </button>
+                    <button class="btn rounded-circle bg-transparent">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img"
+                            aria-labelledby="a3z47noyb2dyfxqltjym8wvugymyvj6v" aria-hidden="true" id="show-more-icon">
+                            <path
+                                d="M7 12a2 2 0 11-4 0 2 2 0 014 0zm7 0a2 2 0 11-4 0 2 2 0 014 0zm5 2a2 2 0 100-4 2 2 0 000 4z">
+                            </path>
+                        </svg>
+                    </button>
+                </aside>
+            </div>
+
+            <div class="col-12 col-lg-8 justify-content-lg-center">
+                <main> <!--MAIN-->
+                    <div class="container-fluid bg-white">
+                        <div class="row">
+                            <div class="col-12 border border-2 border-secondary-subtle rounded">
+                                <section>
+                                    <img class="img-fluid d-flex" src="assets/post-image.webp" alt="post-image">
+                                    <article class="ms-5">
+                                        <div class="article-header">
+                                            <div class="post-data-img d-flex mt-5 position-relative">
+                                                <a href="#">
+                                                    <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--Vce2LydN--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/1/0213bbaa-d5a1-4d25-9e7a-10c30b455af0.png"
+                                                        class="rounded" alt="DEV team profile image" width="40"
+                                                        height="40">
+                                                </a>
+                                                <a href="#" class="position-absolute d-inline-flex">
+                                                    <img class="border border-2 rounded-circle"
+                                                        src="https://res.cloudinary.com/practicaldev/image/fetch/s--Gjc1XuR4--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/494502/2d4eb07b-a07a-46f9-91cd-1b98d862a13c.png"
+                                                        alt="Erin Bensinger" width="24" height="24">
+                                                </a>
+
+                                                <div class="post-data d-flex ms-3">
+                                                    <a href="#">
+                                                        <h6 class="fw-bolder">Erin Bensinger</h6>
+                                                    </a>
+                                                    <span class="ms-2 text-muted"> for </span>
+                                                    <a href="#" class="ms-2">The DEV Team</a>
+                                                    <p>Posted on 31 ene</p>
+                                                </div>
+                                            </div>
+                                            <h1 class="fw-bolder mt-3">#DEVDiscuss: to Specialize or to Generalize?</h1>
+                                            <span class="d-flex mt-4">
+                                                <a href="#"
+                                                    class="category category-button text-muted d-inline me-3">#devdiscuss</a>
+                                                <a href="#"
+                                                    class="category category-button text-muted d-inline me-3">#career</a>
+                                                <a href="#"
+                                                    class="category category-button text-muted d-inline">#beginners</a>
+                                            </span>
+                                        </div>
+
+                                        <div class="article-main d-flex flex-column align-items-center mt-5">
+                                            <div class="card max-vw-100">
+                                                <div class="card-header bg-white">
+                                                    <h5 class="text-principal fw-bold">#DevDiscuss (4 Part Series)</h5>
+                                                </div>
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item">
+                                                        <p class="badge bg-gray rounded-circle p-2">1</p>
+                                                        <span><a href="#">#DevDiscuss: Uses of WebAssembly</a></span>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <p class="badge bg-gray rounded-circle p-2">2</p>
+                                                        <span><a href="#">#DevDiscuss: Passwordless
+                                                                Authentication</a></span>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <p class="badge bg-gray rounded-circle p-2">3</p>
+                                                        <span><a href="#">#DevDiscuss: Linode + DEV Hackathon</a></span>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <p class="badge bg-gray rounded-circle p-2">4</p>
+                                                        <span><a href="#" class="fw-bolder">#DevDiscuss: to Specialize
+                                                                or to Generalize?</a></span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <p class="fst-italic mt-3 align-self-start font-monospace">image created by
+                                                <a href="https://www.patreon.com/margauxpeltat"
+                                                    class="text-principal text-decoration-underline">Margaux Peltat</a>
+                                                for the <a href="https://www.youtube.com/watch?v=lTRiuFIWV54"
+                                                    class="text-principal text-decoration-underline">Chilled Cow YouTube
+                                                    channel</a>
+                                            </p>
+                                            <p class="align-self-start font-monospace">Time for #DEVDiscuss — right here
+                                                on DEV 😎</p>
+                                            <div class="card mt-3 mb-3 max-vw-100 position-relative shadow">
+                                                <div class="row g-0">
+                                                    <div class="col-1 col-lg-2">
+                                                        <img src="assets/post-card-image.jpg"
+                                                            class="post-card-image rounded-circle position-absolute" style="max-width: 85px"  alt="post-card-image">
+                                                    </div>
+                                                    <div class="col-9 col-lg-8">
+                                                        <div class="card-body">
+                                                            <h2 class="card-title">Should Developers Specialize or
+                                                                Generalize?</h2>
+                                                            <p class="fs-6 fw-semibold">Void⚡ ・ Jan 24 ・ 2 min read</p>
+                                                            <span class="d-flex justify-content-between">
+                                                                <p class="category text-muted d-inline">#career</p>
+                                                                <p class="category text-muted d-inline">#beginners</p>
+                                                                <p class="category text-muted d-inline">#webdev</p>
+                                                                <p class="category text-muted d-inline">#codenewbie</p>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="align-self-start font-monospace">Inspired by <a class="text-principal text-decoration-underline" href="#">@codewithvoid</a>'s Top 7 post, tonight’s topic is...should you specialize or generalize as a developer? 🤔</p>
+                                            <p class="align-self-start font-monospace">Questions:</p>
+                                            <ul class="align-self-start border-bottom border-dark-subtle pb-5">
+                                                <li class="fw-bolder">Have you chosen to specialize or generalize as a developer?</li>
+                                                <li class="fw-bolder">What are the pros and cons of your approach?</li>
+                                                <li class="fw-bolder">What are the pros and cons of the <em>other</em> approach?</li>
+                                                <li class="fw-bolder">Any triumphs, fails, or other stories you'd like to share on this topic?</li>
+                                            </ul>
+                                            <h4 class="align-self-start fw-bold mt-4">Top comments (18)</h4>
+                                        </div>
+                                    </article>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+
+            <div class="col-lg-3">
+                <aside class="aside-right-post d-none d-lg-block"> <!--ASIDE DERECHO-->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card" style="width: 20rem;">
+                                    <div class="card-body">
+                                        <a href="#" class="d-flex mb-3">
+                                            <img class="rounded d-flex" src="assets/DEV-image.webp" style="width: 50px;"
+                                                alt="">
+                                            <h5 class="d-flex align-self-end bolder ms-2">The DEV Team</h5>
+                                        </a>
+                                        <a href="#" class="btn btn-principal d-flex justify-content-center">Follow</a>
+                                        <p class="card-text">The hardworking team behind DEV ❤️</p>
+                                        <p>Want to contribute to open source and help make the DEV community stronger?
+                                        </p>
+                                        <p>The code that powers DEV is called <strong>Forem</strong> and is freely
+                                            available
+                                            on GitHub.</p>
+                                        <p>You're welcome to jump in!</p>
+                                        <a href="https://github.com/forem/forem"
+                                            class="btn btn-outline-secondary d-flex justify-content-center">Contribute
+                                            to Forem</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-3">
+                                <div class="card" style="width: 20rem;">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <h5 class="card-title fw-bold d-flex">More from<a
+                                                    class="text-principal ms-2" href="#">The DEV Team</a></h5>
+                                        </div>
+                                        <div class="card-text">
+                                            <a href="#">
+                                                <p>#DEVDiscuss: Linode + DEV Hackathon</p>
+                                            </a>
+                                            <span class="d-flex justify-content-between">
+                                                <p class="category text-muted d-inline">#devdiscuss</p>
+                                                <p class="category text-muted d-inline">#linodehackathon</p>
+                                                <p class="category text-muted d-inline">#linux</p>
+                                                <p class="category text-muted d-inline">#cloud</p>
+                                            </span>
+                                            <a href="#">
+                                                <p>#DEVDiscuss: Passwordless Authentication</p>
+                                            </a>
+                                            <span class="d-flex justify-content-between">
+                                                <p class="category text-muted d-inline">#devdiscuss</p>
+                                                <p class="category text-muted d-inline">#authentication</p>
+                                                <p class="category text-muted d-inline">#security</p>
+                                            </span>
+                                            <a href="#">
+                                                <p>#DEVDiscuss: Uses of WebAssembly</p>
+                                            </a>
+                                            <span class="d-flex justify-content-between">
+                                                <p class="category text-muted d-inline">#discuss</p>
+                                                <p class="category text-muted d-inline">#webassembly</p>
+                                                <p class="category text-muted d-inline">#devdiscuss</p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-5 py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p><a class="link-hover" href="#">DEV Community 👩‍💻👨‍💻</a>— A constructive and inclusive
+                        social
+                        network for
+                        software developers. With you every step of your journey.</p>
+                </div>
+                <div class="col-12">
+                    <ul class="d-flex justify-content-center">
+                        <li class="me-4" style="list-style-type: none">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="me-4">
+                            <a href="#">Listings</a>
+                        </li>
+                        <li class="me-4">
+                            <a href="#">Podcasts</a>
+                        </li>
+                        <li class="me-4">
+                            <a href="#">Videos</a>
+                        </li>
+                        <li class="me-4">
+                            <a href="#">Tags</a>
+                        </li>
+                        <li class="me-4">
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li class="me-4">
+                            <a href="#">Forem Shop</a>
+                        </li>
+                        <li class="me-4">
+                            <a href="#">Sponsors</a>
+                        </li>
+                        <li class="me-4">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="me-4">
+                            <a href="#">Contact</a>
+                        </li>
+                        <li class="me-4">
+                            <a href="#">Guides</a>
+                        </li>
+                        <li class="me-4">
+                            <a href="#">Software comparisons</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12">
+                    <ul class="d-flex justify-content-center">
+                        <li class="me-4" style="list-style-type: none">
+                            <a href="#">Code of Conduct</a>
+                        </li>
+                        <li class="me-4">
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                        <li class="me-4">
+                            <a href="#">Terms of use</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 text-center">
+                    <p>Built on <a class="link-hover" href="https://www.forem.com">Forem</a> — the <a class="link-hover"
+                            href="https://dev.to/t/opensource">open source</a> software
+                        that powers <a class="link-hover" href="https://dev.to">DEV</a> and other inclusive
+                        communities.
+                    </p>
+                </div>
+                <div class="col-12 text-center">
+                    <p>Made with love and <a class="link-hover" href="https://dev.to/t/rails">Ruby on Rails</a>. DEV
+                        Community 👩‍💻👨‍💻 <span title="copyright">©</span> 2016 - 2023.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
