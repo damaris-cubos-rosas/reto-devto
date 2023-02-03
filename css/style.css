@@ -39,13 +39,16 @@ body {
   color: gray;
 }
 
+
 .img-card-aside {
   border-radius: 0.5rem;
 }
 
+
 .prof-img {
   width: 40px;
 }
+
 
 .l-aside-btn {
   border-style: none;
@@ -167,6 +170,11 @@ article .article-main .card li p {
 article .card li:last-of-type p {
   background-color: #2f3ab2;
   color: white;
+}
+
+.post-card-image {
+  left: 20px;
+  top: 20px;
 }
 
 footer {
