@@ -32,10 +32,19 @@ body {
 .socmed-icon{
     color: gray;
 }
+.img-card-aside{
+    border-radius: .5rem;
+}
 .prof-img {
     width: 40px;
 }
-
+.l-aside-btn{
+    border-style: none;
+    &:hover{
+        color: #2f3ab2;
+        background-color: #bfc3ef;
+    }
+}
 .btn-principal {
     background-color: #2f3ab2;
     color: white;
